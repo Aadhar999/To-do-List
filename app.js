@@ -13,7 +13,6 @@ var list_items = ['Buy Food','Cook Food','Eat Food'];
 
 let workItems = [];
 
-
 var day = new Date();
 // we created a new object of date and using that object we call getDay method which return a no. from 0 to 6 based on week days
 // var weekDayNum = day.getDay();
