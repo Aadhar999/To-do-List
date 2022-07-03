@@ -25,7 +25,7 @@ weekDay = day.toLocaleDateString("locales",options); // passing the option we cr
 
 
 
-app.get("/", function (req, res) {
+app.get('/', function (req, res) {
 
   res.render("index", { post: '/',Title: weekDay , new_list_item: list_items}); // render option of ejs in place of send. now this will render the index.ejs page in views directory and change the variables value their to the data passed here in form of key value pairs.
 });
@@ -51,6 +51,6 @@ app.get('/about',function(req,res){
   res.render('about');
 });
 
-app.listen(3000 || process.env.PORT, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log("Server have started on port 3000");
 });
